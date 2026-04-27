@@ -1,5 +1,0 @@
-flask
-plotly
-numpy
-tqdm
-transformers  # optional, tokenizer features
