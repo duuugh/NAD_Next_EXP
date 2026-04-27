@@ -1,0 +1,18 @@
+{
+  "task": "early_stop",
+  "method_name": "early_stop_dynamics_router_conservative_submit",
+  "input_policy": "/home/jovyan/work/NAD_Next/result/dynamics_policy_conservative.json",
+  "source_disable": "/home/jovyan/work/NAD_Next/result/early_stop_router_tmp_disable.json",
+  "source_neg_A_accel_only": "/home/jovyan/work/NAD_Next/result/early_stop_router_tmp_negA.json",
+  "source_rho_tail_plus_neg_A_accel": "/home/jovyan/work/NAD_Next/result/early_stop_router_tmp_rhotailplus.json",
+  "applied_routes": {
+    "DS-R1/aime24": "rho_tail_plus_neg_A_accel",
+    "DS-R1/aime25": "neg_A_accel_only",
+    "DS-R1/brumo25": "disable",
+    "DS-R1/gpqa": "disable",
+    "DS-R1/hmmt25": "rho_tail_plus_neg_A_accel",
+    "DS-R1/lcb_v5": "disable"
+  },
+  "cache_count": 12,
+  "problem_count": 970
+}

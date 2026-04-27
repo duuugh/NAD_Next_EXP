@@ -1,0 +1,461 @@
+{
+  "task": "early_stop",
+  "method_name": "early_stop_dynamics_v2_local",
+  "analysis_requirements": {
+    "1_labeled_slices": true,
+    "2_budget_curves": true,
+    "3_delta_vs_baseline": true,
+    "4_unlabeled_change_rates": true,
+    "5_coverage_audit": true
+  },
+  "modes": {
+    "rho_tail_only": {
+      "labeled slices": {
+        "AUC-AUROC": 0.5145471237523258,
+        "AUC-SelAcc": 0.6818556701030929,
+        "Stop@100": 0.6762886597938145
+      },
+      "budget curves": [
+        {
+          "budget": 0.1,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5
+        },
+        {
+          "budget": 0.2,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.5208480982754548
+        },
+        {
+          "budget": 0.3,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.52086778486495
+        },
+        {
+          "budget": 0.4,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.5208284116859595
+        },
+        {
+          "budget": 0.5,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.52086778486495
+        },
+        {
+          "budget": 0.6,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.5210055909914166
+        },
+        {
+          "budget": 0.7,
+          "SelAcc": 0.6824742268041237,
+          "AUROC": 0.5164201357554832
+        },
+        {
+          "budget": 0.8,
+          "SelAcc": 0.6804123711340206,
+          "AUROC": 0.512336265884653
+        },
+        {
+          "budget": 0.9,
+          "SelAcc": 0.6804123711340206,
+          "AUROC": 0.512297165200391
+        },
+        {
+          "budget": 1.0,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5
+        }
+      ],
+      "delta vs baseline": {
+        "delta AUC-AUROC": -0.04445061609647771,
+        "delta AUC-SelAcc": 0.003505154639175334,
+        "delta Stop@100": -0.0020618556701030855
+      },
+      "unlabeled slices": {
+        "mean selection change rate": 0.0,
+        "mean rank change rate": 0.0,
+        "by_budget": [
+          {
+            "budget": 0.1,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.2,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.3,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.4,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.5,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.6,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.7,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.8,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.9,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 1.0,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          }
+        ]
+      }
+    },
+    "neg_A_accel_only": {
+      "labeled slices": {
+        "AUC-AUROC": 0.5054327800296372,
+        "AUC-SelAcc": 0.6771134020618558,
+        "Stop@100": 0.6762886597938145
+      },
+      "budget curves": [
+        {
+          "budget": 0.1,
+          "SelAcc": 0.6824742268041237,
+          "AUROC": 0.5169301997096559
+        },
+        {
+          "budget": 0.2,
+          "SelAcc": 0.6804123711340206,
+          "AUROC": 0.5122580645161291
+        },
+        {
+          "budget": 0.3,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5036119310237689
+        },
+        {
+          "budget": 0.4,
+          "SelAcc": 0.6742268041237114,
+          "AUROC": 0.49949676770022833
+        },
+        {
+          "budget": 0.5,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.503563383563772
+        },
+        {
+          "budget": 0.6,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.503641059499767
+        },
+        {
+          "budget": 0.7,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.503844958831754
+        },
+        {
+          "budget": 0.8,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5038935062917509
+        },
+        {
+          "budget": 0.9,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5070879291595464
+        },
+        {
+          "budget": 1.0,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5
+        }
+      ],
+      "delta vs baseline": {
+        "delta AUC-AUROC": -0.05356495981916631,
+        "delta AUC-SelAcc": -0.0012371134020617847,
+        "delta Stop@100": -0.0020618556701030855
+      },
+      "unlabeled slices": {
+        "mean selection change rate": 0.0,
+        "mean rank change rate": 0.0,
+        "by_budget": [
+          {
+            "budget": 0.1,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.2,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.3,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.4,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.5,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.6,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.7,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.8,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.9,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 1.0,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          }
+        ]
+      }
+    },
+    "rho_tail_plus_neg_A_accel": {
+      "labeled slices": {
+        "AUC-AUROC": 0.5161736051820702,
+        "AUC-SelAcc": 0.6824742268041237,
+        "Stop@100": 0.6762886597938145
+      },
+      "budget curves": [
+        {
+          "budget": 0.1,
+          "SelAcc": 0.6824742268041237,
+          "AUROC": 0.5169301997096559
+        },
+        {
+          "budget": 0.2,
+          "SelAcc": 0.6824742268041237,
+          "AUROC": 0.5161847216227882
+        },
+        {
+          "budget": 0.3,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.5208480982754548
+        },
+        {
+          "budget": 0.4,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.520946531222931
+        },
+        {
+          "budget": 0.5,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.5208284116859595
+        },
+        {
+          "budget": 0.6,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.5208677848649501
+        },
+        {
+          "budget": 0.7,
+          "SelAcc": 0.6845360824742268,
+          "AUROC": 0.520946531222931
+        },
+        {
+          "budget": 0.8,
+          "SelAcc": 0.6804123711340206,
+          "AUROC": 0.5121407624633432
+        },
+        {
+          "budget": 0.9,
+          "SelAcc": 0.6804123711340206,
+          "AUROC": 0.5120430107526882
+        },
+        {
+          "budget": 1.0,
+          "SelAcc": 0.6762886597938145,
+          "AUROC": 0.5
+        }
+      ],
+      "delta vs baseline": {
+        "delta AUC-AUROC": -0.04282413466673329,
+        "delta AUC-SelAcc": 0.004123711340206171,
+        "delta Stop@100": -0.0020618556701030855
+      },
+      "unlabeled slices": {
+        "mean selection change rate": 0.0,
+        "mean rank change rate": 0.0,
+        "by_budget": [
+          {
+            "budget": 0.1,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.2,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.3,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.4,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.5,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.6,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.7,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.8,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 0.9,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          },
+          {
+            "budget": 1.0,
+            "selection_change_rate": 0.0,
+            "rank_change_rate": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "coverage_audit": {
+    "real_coverage": {
+      "cache_problem_ids": {
+        "DS-R1/aime24": [
+          "60",
+          "61",
+          "62",
+          "63",
+          "64",
+          "65",
+          "66",
+          "67",
+          "68",
+          "69",
+          "70",
+          "71",
+          "72",
+          "73",
+          "74",
+          "75",
+          "76",
+          "77",
+          "78",
+          "79",
+          "80",
+          "81",
+          "82",
+          "83",
+          "84",
+          "85",
+          "86",
+          "87",
+          "88",
+          "89"
+        ]
+      },
+      "problem_count": 30
+    },
+    "local_expansion_coverage": {
+      "cache_problem_ids": {},
+      "problem_count": 0
+    },
+    "total_coverage": {
+      "covered_problem_count": 30,
+      "total_problem_count": 970,
+      "coverage_rate": 0.030927835051546393
+    }
+  },
+  "labeled_cache_keys": [
+    "DS-R1/aime24",
+    "DS-R1/aime25",
+    "DS-R1/brumo25",
+    "DS-R1/gpqa",
+    "DS-R1/hmmt25",
+    "DS-R1/lcb_v5"
+  ],
+  "unlabeled_cache_keys": [
+    "Qwen3-4B/aime24",
+    "Qwen3-4B/aime25",
+    "Qwen3-4B/brumo25",
+    "Qwen3-4B/gpqa",
+    "Qwen3-4B/hmmt25",
+    "Qwen3-4B/lcb_v5"
+  ],
+  "stability_check": {
+    "combo_vs_rho_tail_only_AUROC_delta": 0.0016264814297444197,
+    "combo_vs_rho_tail_only_SelAcc_delta": 0.0006185567010308368,
+    "combo_vs_rho_tail_only_Stop_delta": 0.0,
+    "is_combo_more_stable_than_rho_only": true
+  },
+  "candidate_assessment": {
+    "worth_next_leaderboard_candidate": true,
+    "reason": "combo keeps stop performance while improving AUROC stability"
+  },
+  "validation": {
+    "summary": {
+      "input": "/home/jovyan/work/NAD_Next/result/early_stop_dynamics_v2_local.json",
+      "reference": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v1_complete.json",
+      "expected_task": "early_stop",
+      "cache_count": 12,
+      "problem_count": 970,
+      "sample_count": 62080,
+      "ok": true,
+      "error_count": 0,
+      "truncated": false
+    },
+    "errors": []
+  }
+}

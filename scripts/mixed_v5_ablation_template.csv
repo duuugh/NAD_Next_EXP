@@ -1,0 +1,6 @@
+experiment_name,target_cache_keys,enable_qwen_compressed,tau_max_gap,tau_mass_gap,cluster_topr,metric,use_aux,use_count,triggered_count,changed_count,changed_after_trigger,leaderboard_score,notes_file
+nad_mixed_v5_aime_cluster_mass_only,"DS-R1/aime24,DS-R1/aime25,Qwen3-4B/aime24,Qwen3-4B/aime25",false,0.001,0.002,3,tok_logprob,false,false,,,,,
+nad_mixed_v5_aime_cluster_mass_only_tau_relaxed,"DS-R1/aime24,DS-R1/aime25,Qwen3-4B/aime24,Qwen3-4B/aime25",false,0.002,0.005,3,tok_logprob,false,false,,,,,
+nad_mixed_v5_aime_cluster_mass_only_tau_strict,"DS-R1/aime24,DS-R1/aime25,Qwen3-4B/aime24,Qwen3-4B/aime25",false,0.0005,0.001,3,tok_logprob,false,false,,,,,
+nad_mixed_v5_aime_cluster_mass_aux,"DS-R1/aime24,DS-R1/aime25,Qwen3-4B/aime24,Qwen3-4B/aime25",false,0.001,0.002,3,tok_logprob,true,false,,,,,
+nad_mixed_v5_aime_plus_qwen_comp_cluster,"DS-R1/aime24,DS-R1/aime25,Qwen3-4B/aime24,Qwen3-4B/aime25,Qwen3-4B/gpqa,Qwen3-4B/brumo25,Qwen3-4B/hmmt25",true,0.001,0.002,3,tok_logprob,true,false,,,,,

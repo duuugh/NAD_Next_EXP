@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-04-23T13:14:53+00:00",
+  "groups": [
+    {
+      "name": "Early Stop",
+      "description": "最终提交、router 依据、以及 confidence/dynamics 对照评估。",
+      "files": [
+        {
+          "label": "early_stop_dynamics_router_conservative_submit.json",
+          "originalPath": "result/early_stop_dynamics_router_conservative_submit.json",
+          "publicPath": "data/files/early_stop/early_stop_dynamics_router_conservative_submit.json"
+        },
+        {
+          "label": "early_stop_dynamics_router_conservative_submit_notes.json",
+          "originalPath": "result/early_stop_dynamics_router_conservative_submit_notes.json",
+          "publicPath": "data/files/early_stop/early_stop_dynamics_router_conservative_submit_notes.json"
+        },
+        {
+          "label": "early_stop_mean_confidence_variants_eval.json",
+          "originalPath": "result/early_stop_mean_confidence_variants_eval.json",
+          "publicPath": "data/files/early_stop/early_stop_mean_confidence_variants_eval.json"
+        },
+        {
+          "label": "early_stop_dynamics_v2_local_report.json",
+          "originalPath": "result/early_stop_dynamics_v2_local_report.json",
+          "publicPath": "data/files/early_stop/early_stop_dynamics_v2_local_report.json"
+        },
+        {
+          "label": "dynamics_v2_local_batch_summary.json",
+          "originalPath": "result/dynamics_v2_local_batch_summary.json",
+          "publicPath": "data/files/early_stop/dynamics_v2_local_batch_summary.json"
+        },
+        {
+          "label": "dynamics_benchmark_router.json",
+          "originalPath": "result/dynamics_benchmark_router.json",
+          "publicPath": "data/files/early_stop/dynamics_benchmark_router.json"
+        },
+        {
+          "label": "dynamics_benchmark_router.md",
+          "originalPath": "result/dynamics_benchmark_router.md",
+          "publicPath": "data/files/early_stop/dynamics_benchmark_router.md"
+        }
+      ]
+    },
+    {
+      "name": "Best-of-N",
+      "description": "最终主线、baseline、candidate-level head 试验，以及和 specialists 的对照产物。",
+      "files": [
+        {
+          "label": "best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit.json",
+          "originalPath": "result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit_notes.json",
+          "originalPath": "result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit_notes.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit_notes.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v1_complete.json",
+          "originalPath": "result/best_of_n_nad_mixed_v1_complete.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v1_complete.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v1_complete_notes.json",
+          "originalPath": "result/best_of_n_nad_mixed_v1_complete_notes.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v1_complete_notes.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v6_local_head_submit.json",
+          "originalPath": "result/best_of_n_nad_mixed_v6_local_head_submit.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v6_local_head_submit.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v6_local_head_submit_notes.json",
+          "originalPath": "result/best_of_n_nad_mixed_v6_local_head_submit_notes.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v6_local_head_submit_notes.json"
+        },
+        {
+          "label": "mixed_v6_local_head_metrics.json",
+          "originalPath": "result/mixed_v6_local_head_metrics.json",
+          "publicPath": "data/files/best_of_n/mixed_v6_local_head_metrics.json"
+        },
+        {
+          "label": "mixed_v6_final_check_summary.json",
+          "originalPath": "result/mixed_v6_final_check_summary.json",
+          "publicPath": "data/files/best_of_n/mixed_v6_final_check_summary.json"
+        },
+        {
+          "label": "specialists_inventory.json",
+          "originalPath": "result/specialists_inventory.json",
+          "publicPath": "data/files/best_of_n/specialists_inventory.json"
+        },
+        {
+          "label": "compare_mixedv2_vs_specialists_v1_report.json",
+          "originalPath": "result/compare_mixedv2_vs_specialists_v1_report.json",
+          "publicPath": "data/files/best_of_n/compare_mixedv2_vs_specialists_v1_report.json"
+        },
+        {
+          "label": "a1_medoid_activation_aime24.json",
+          "originalPath": "result/a1_medoid_activation_aime24.json",
+          "publicPath": "data/files/best_of_n/a1_medoid_activation_aime24.json"
+        },
+        {
+          "label": "a1_medoid_activation_aime24_accuracy.json",
+          "originalPath": "result/a1_medoid_activation_aime24_accuracy.json",
+          "publicPath": "data/files/best_of_n/a1_medoid_activation_aime24_accuracy.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit.json",
+          "originalPath": "result/best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit.json"
+        },
+        {
+          "label": "best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit_notes.json",
+          "originalPath": "result/best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit_notes.json",
+          "publicPath": "data/files/best_of_n/best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit_notes.json"
+        }
+      ]
+    },
+    {
+      "name": "Web Exports",
+      "description": "前端当前直接消费的导出数据。",
+      "files": [
+        {
+          "label": "early_stop_cards.json",
+          "originalPath": "web/public/data/early_stop_cards.json",
+          "publicPath": "data/files/web_exports/early_stop_cards.json"
+        },
+        {
+          "label": "best_of_n_cards.json",
+          "originalPath": "web/public/data/best_of_n_cards.json",
+          "publicPath": "data/files/web_exports/best_of_n_cards.json"
+        },
+        {
+          "label": "research_timeline.json",
+          "originalPath": "web/public/data/research_timeline.json",
+          "publicPath": "data/files/web_exports/research_timeline.json"
+        },
+        {
+          "label": "activation_cases.json",
+          "originalPath": "web/public/data/activation_cases.json",
+          "publicPath": "data/files/web_exports/activation_cases.json"
+        },
+        {
+          "label": "dynamics_interactive.json",
+          "originalPath": "web/public/data/dynamics_interactive.json",
+          "publicPath": "data/files/web_exports/dynamics_interactive.json"
+        },
+        {
+          "label": "data_index.json",
+          "originalPath": "web/public/data/data_index.json",
+          "publicPath": "data/files/web_exports/data_index.json"
+        }
+      ]
+    }
+  ]
+}

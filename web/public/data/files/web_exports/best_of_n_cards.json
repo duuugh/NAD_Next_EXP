@@ -1,0 +1,1199 @@
+{
+  "generatedAt": "2026-04-23T13:14:47+00:00",
+  "task": "best_of_n",
+  "finalBestId": "bon_mixed_v2_logprob",
+  "highlightedIds": [
+    "bon_mixed_v2_logprob",
+    "bon_mixed_v1_complete",
+    "bon_mixed_v3_tailveto",
+    "bon_activation_a1",
+    "bon_local_head"
+  ],
+  "cards": [
+    {
+      "id": "bon_mixed_v2_logprob",
+      "task": "best_of_n",
+      "title": "nad_mixed_v2_aime_top2_gap1e3_logprob",
+      "shortDescription": "最终主线：仅在 AIME 四个 cache 做 very small top2 gap + tok_logprob patch，其他 cache 保守不动。",
+      "status": "final_best",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit.json",
+        "result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit_notes.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154398070958256,
+        "std_score": 0.13598196771691734,
+        "max_score": 0.810154681737765,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685268785005,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.5850297760064191,
+          "std_score": 0.024726873162172324,
+          "max_score": 0.6514769206510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.1607066998945007,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850018178579496,
+          "std_score": 0.028033739565980764,
+          "max_score": 0.6462110887037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.189434678362442,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046576167613056,
+          "std_score": 0.016656767232331254,
+          "max_score": 0.6573355803952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482638223264,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038336118839469,
+          "std_score": 0.02161414695997392,
+          "max_score": 0.654048205421997,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466151101682,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [
+        "metric: tok_logprob",
+        "reduction: mean",
+        "group_size: 20",
+        "topk: 2",
+        "max_gap: 0.001",
+        "tie-break 维持 tok_logprob，避免把 candidate-level 试验扩展成全局提交风险。"
+      ],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n"
+    },
+    {
+      "id": "bon_mixed_v1_complete",
+      "task": "best_of_n",
+      "title": "nad_mixed_v1_complete",
+      "shortDescription": "完整 baseline / 拼装版，为后续所有 targeted patch 提供统一起点。",
+      "status": "important",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v1_complete.json",
+        "result/best_of_n_nad_mixed_v1_complete_notes.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154394729165554,
+        "std_score": 0.13598161815318563,
+        "max_score": 0.8101546814044317,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685235451674,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.585029320543011,
+          "std_score": 0.02472662406004941,
+          "max_score": 0.6514769196510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.16070669889450073,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850004679523408,
+          "std_score": 0.02803203395881708,
+          "max_score": 0.6462110877037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.18943467736244202,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046559693602224,
+          "std_score": 0.016655590836332185,
+          "max_score": 0.6573355793952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482538223267,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038330545028051,
+          "std_score": 0.021613083300479115,
+          "max_score": 0.6540482044219971,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466051101685,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n"
+    },
+    {
+      "id": "bon_mixed_v2_top3_selfcert",
+      "task": "best_of_n",
+      "title": "nad_mixed_v2_aime_top3_selfcert",
+      "shortDescription": "AIME 定向 self-cert top3 patch；说明 targeted patch 有效，但最终不如 top2 logprob 稳。",
+      "status": "important",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v2_aime_top3_selfcert_submit.json",
+        "result/best_of_n_nad_mixed_v2_aime_top3_selfcert_submit_notes.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154423703801217,
+        "std_score": 0.13598384343285494,
+        "max_score": 0.810154681737765,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685268785005,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.5850364594255673,
+          "std_score": 0.024731917768936504,
+          "max_score": 0.6514769206510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.1607066998945007,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850087580116874,
+          "std_score": 0.028036650146117222,
+          "max_score": 0.6462110887037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.189434678362442,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046673358574297,
+          "std_score": 0.016666361412608938,
+          "max_score": 0.6573355803952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482638223264,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038410286264903,
+          "std_score": 0.021619106184046787,
+          "max_score": 0.654048205421997,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466151101682,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [
+        "metric: tok_selfcert",
+        "reduction: mean",
+        "group_size: 20",
+        "topk: 3",
+        "max_gap: 0.002"
+      ],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n"
+    },
+    {
+      "id": "bon_cluster_router",
+      "task": "best_of_n",
+      "title": "nad_mixed_v5_cluster_router",
+      "shortDescription": "cluster router 尝试过更复杂的结构化 patch，但最终没有成为主提交路线。",
+      "status": "deprecated",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v5_cluster_router_submit.json",
+        "result/best_of_n_nad_mixed_v5_cluster_router_submit_notes.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154398070978221,
+        "std_score": 0.13598196771811857,
+        "max_score": 0.8101546818210983,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.4952268527711834,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.5850297760189191,
+          "std_score": 0.024726873171525613,
+          "max_score": 0.6514769216510314,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.16070670089450068,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850018178694079,
+          "std_score": 0.028033739571042236,
+          "max_score": 0.6462110887037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.189434678362442,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046576167613056,
+          "std_score": 0.016656767232331254,
+          "max_score": 0.6573355803952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482638223264,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038336118839469,
+          "std_score": 0.02161414695997392,
+          "max_score": 0.654048205421997,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466151101682,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [
+        "metric: tok_logprob",
+        "reduction: mean",
+        "group_size: 20"
+      ],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n"
+    },
+    {
+      "id": "bon_local_head",
+      "task": "best_of_n",
+      "title": "nad_mixed_v6_aime_local_binary_corrector",
+      "shortDescription": "candidate-level local head 路线。离线分析有解释价值，但最终只落地成极小范围修补证据。",
+      "status": "promising",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v6_local_head_submit.json",
+        "result/best_of_n_nad_mixed_v6_local_head_submit_notes.json",
+        "result/mixed_v6_local_head_metrics.json",
+        "result/mixed_v6_final_check_summary.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154398096751585,
+        "std_score": 0.13598197221651423,
+        "max_score": 0.810154681737765,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685268785005,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.5850298069584143,
+          "std_score": 0.02472692715733499,
+          "max_score": 0.6514769206510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.1607066998945007,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850018178579496,
+          "std_score": 0.028033739565980764,
+          "max_score": 0.6462110887037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.189434678362442,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046576167613056,
+          "std_score": 0.016656767232331254,
+          "max_score": 0.6573355803952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482638223264,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038336118839469,
+          "std_score": 0.02161414695997392,
+          "max_score": 0.654048205421997,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466151101682,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [
+        "max_gap: 0.005",
+        "threshold: 0.98",
+        "candidate_count: 1",
+        "applied_count: 1",
+        "chosen_threshold: 0.98",
+        "valid_auc: nan",
+        "head_global net_gain@lambda=1: 0.0"
+      ],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n"
+    },
+    {
+      "id": "bon_activation_a1",
+      "task": "best_of_n",
+      "title": "A1 = medoid + activation tie-break",
+      "shortDescription": "第一轮 activation 方向验证。图像上能看到现象，但作为主 tie-break 不够稳。",
+      "status": "deprecated",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v1_complete.json",
+        "result/a1_medoid_activation_aime24.json",
+        "result/a1_medoid_activation_aime24_accuracy.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154394729165554,
+        "std_score": 0.13598161815318563,
+        "max_score": 0.8101546814044317,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685235451674,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.585029320543011,
+          "std_score": 0.02472662406004941,
+          "max_score": 0.6514769196510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.16070669889450073,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850004679523408,
+          "std_score": 0.02803203395881708,
+          "max_score": 0.6462110877037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.18943467736244202,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046559693602224,
+          "std_score": 0.016655590836332185,
+          "max_score": 0.6573355793952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482538223267,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038330545028051,
+          "std_score": 0.021613083300479115,
+          "max_score": 0.6540482044219971,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466051101685,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [
+        "单 cache 最小真实实验：A1 = medoid + activation tie-break",
+        "图像观察主要来自题 61 / 70。"
+      ],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n",
+      "visuals": [
+        {
+          "title": "activation_61",
+          "publicPath": "data/files/visuals/activation_61.png",
+          "caption": "题 61：A1 阶段重点观察到的 activation 轨迹差异。",
+          "interactiveKind": "activation",
+          "interactiveDataPath": "data/activation_cases.json",
+          "interactiveKey": "61"
+        },
+        {
+          "title": "activation_70",
+          "publicPath": "data/files/visuals/activation_70.png",
+          "caption": "题 70：与题 61 类似，但趋势更弱。",
+          "interactiveKind": "activation",
+          "interactiveDataPath": "data/activation_cases.json",
+          "interactiveKey": "70"
+        }
+      ]
+    },
+    {
+      "id": "bon_mixed_v3_tailveto",
+      "task": "best_of_n",
+      "title": "nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto",
+      "shortDescription": "把 activation tail warning 挂到最强 logprob baseline 上的 very small veto 尝试；本地有小收益，但 leaderboard 不稳。",
+      "status": "deprecated",
+      "sourceFiles": [
+        "result/best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit.json",
+        "result/best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit_notes.json"
+      ],
+      "overall": {
+        "mean_score": 0.6154398186470729,
+        "std_score": 0.13598196453365652,
+        "max_score": 0.810154681737765,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685268785005,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.5850299146213873,
+          "std_score": 0.024726834963042538,
+          "max_score": 0.6514769206510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.1607066998945007,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5850018178579496,
+          "std_score": 0.028033739565980764,
+          "max_score": 0.6462110887037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.189434678362442,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302083333,
+          "std_score": 0.4167408810325802,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341601269,
+          "std_score": 0.316921517457694,
+          "max_score": 1.0,
+          "min_score": 0.0,
+          "score_range": 1.0,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.43846028645833335,
+          "std_score": 0.4027554571975306,
+          "max_score": 1.0,
+          "min_score": 0.015625,
+          "score_range": 0.984375,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7121741745445297,
+          "std_score": 0.18676651956036874,
+          "max_score": 1.0,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416005969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6046576167613056,
+          "std_score": 0.016656767232331254,
+          "max_score": 0.6573355803952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482638223264,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6038336118839469,
+          "std_score": 0.02161414695997392,
+          "max_score": 0.654048205421997,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466151101682,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5897932803568741,
+          "std_score": 0.026768024019037898,
+          "max_score": 0.7560518383979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152919769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.626826961868151,
+          "std_score": 0.019201755182434135,
+          "max_score": 0.7033554911613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334018707275,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5829530507481346,
+          "std_score": 0.018395866356260695,
+          "max_score": 0.6533770561218262,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978845953941345,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7518618442958027,
+          "std_score": 0.15320206487664365,
+          "max_score": 1.0,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.8855926738036889,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [
+        "max_gap: 0.001",
+        "可触发的 DS-R1/aime24 题号：62、80、85。",
+        "本地曾有 +1，但最终 leaderboard 反馈不好。"
+      ],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n",
+      "visuals": [
+        {
+          "title": "activation_78",
+          "publicPath": "data/files/visuals/activation_78.png",
+          "caption": "尾段 warning 观察样例之一：尾段新增 neuron 很少。",
+          "interactiveKind": "activation",
+          "interactiveDataPath": "data/activation_cases.json",
+          "interactiveKey": "78"
+        },
+        {
+          "title": "activation_80",
+          "publicPath": "data/files/visuals/activation_80.png",
+          "caption": "mixed_v3 本地曾改对的一题，对应 activation tail warning 观察。",
+          "interactiveKind": "activation",
+          "interactiveDataPath": "data/activation_cases.json",
+          "interactiveKey": "80"
+        },
+        {
+          "title": "activation_82",
+          "publicPath": "data/files/visuals/activation_82.png",
+          "caption": "尾段平台化现象的另一个样例。",
+          "interactiveKind": "activation",
+          "interactiveDataPath": "data/activation_cases.json",
+          "interactiveKey": "82"
+        },
+        {
+          "title": "activation_85",
+          "publicPath": "data/files/visuals/activation_85.png",
+          "caption": "可触发但最终没有转成稳定外部收益的样例。",
+          "interactiveKind": "activation",
+          "interactiveDataPath": "data/activation_cases.json",
+          "interactiveKey": "85"
+        }
+      ]
+    },
+    {
+      "id": "bon_em_regularized_m4",
+      "task": "best_of_n",
+      "title": "best_of_n_em_regularized_m4_seed42_keepall",
+      "shortDescription": "EM regularized 路线保留为探索证据，但没有超过更小、更可控的 AIME patch 主线。",
+      "status": "deprecated",
+      "sourceFiles": [
+        "result/best_of_n_em_regularized_m4_seed42_keepall.json",
+        "result/best_of_n_em_regularized_m4_seed42_keepall_notes.json"
+      ],
+      "overall": {
+        "mean_score": 0.6158180577434378,
+        "std_score": 0.13633153381395868,
+        "max_score": 0.8101546824044317,
+        "min_score": 0.3149278290499149,
+        "score_range": 0.49522685335451677,
+        "problem_count": 80.83333333333333,
+        "candidate_count": 5173.333333333333
+      },
+      "perCache": {
+        "DS-R1/aime24": {
+          "mean_score": 0.5851423288851764,
+          "std_score": 0.024801426721643986,
+          "max_score": 0.6514769206510315,
+          "min_score": 0.49077022075653076,
+          "score_range": 0.1607066998945007,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/aime25": {
+          "mean_score": 0.5851071814541803,
+          "std_score": 0.028090976038239897,
+          "max_score": 0.6462110887037048,
+          "min_score": 0.4567764103412628,
+          "score_range": 0.189434678362442,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/brumo25": {
+          "mean_score": 0.6149251302239583,
+          "std_score": 0.4167408810356723,
+          "max_score": 1.000000001,
+          "min_score": 0.015625,
+          "score_range": 0.9843750010000001,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/gpqa": {
+          "mean_score": 0.6897601341757519,
+          "std_score": 0.31692151746216773,
+          "max_score": 1.000000001,
+          "min_score": 0.0,
+          "score_range": 1.000000001,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "DS-R1/hmmt25": {
+          "mean_score": 0.4384684244947917,
+          "std_score": 0.40274801830775536,
+          "max_score": 1.000000001,
+          "min_score": 0.015625,
+          "score_range": 0.9843750010000001,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "DS-R1/lcb_v5": {
+          "mean_score": 0.7141562488440435,
+          "std_score": 0.18867324964061666,
+          "max_score": 1.000000001,
+          "min_score": 0.11415839940309525,
+          "score_range": 0.8858416015969048,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        },
+        "Qwen3-4B/aime24": {
+          "mean_score": 0.6047634351223495,
+          "std_score": 0.016737623701411283,
+          "max_score": 0.6573355803952942,
+          "min_score": 0.5411107540130615,
+          "score_range": 0.11622482638223264,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/aime25": {
+          "mean_score": 0.6039233316513187,
+          "std_score": 0.021671094593831486,
+          "max_score": 0.654048205421997,
+          "min_score": 0.5296935439109802,
+          "score_range": 0.12435466151101682,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/brumo25": {
+          "mean_score": 0.5898989391048537,
+          "std_score": 0.02683655472976044,
+          "max_score": 0.7560518393979797,
+          "min_score": 0.505836546421051,
+          "score_range": 0.2502152929769287,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/gpqa": {
+          "mean_score": 0.6269637514626452,
+          "std_score": 0.019330675833550585,
+          "max_score": 0.7033554921613464,
+          "min_score": 0.5015421509742737,
+          "score_range": 0.20181334118707273,
+          "problem_count": 198.0,
+          "candidate_count": 12672.0
+        },
+        "Qwen3-4B/hmmt25": {
+          "mean_score": 0.5830436564362085,
+          "std_score": 0.018463556448449738,
+          "max_score": 0.6533770571218261,
+          "min_score": 0.4935885965824127,
+          "score_range": 0.15978846053941342,
+          "problem_count": 30.0,
+          "candidate_count": 1920.0
+        },
+        "Qwen3-4B/lcb_v5": {
+          "mean_score": 0.7536641310659754,
+          "std_score": 0.1549628312544047,
+          "max_score": 1.000000001,
+          "min_score": 0.11440732619631111,
+          "score_range": 0.885592674803689,
+          "problem_count": 167.0,
+          "candidate_count": 10688.0
+        }
+      },
+      "notes": [],
+      "tags": [
+        "best-of-n"
+      ],
+      "timelineGroup": "best_of_n"
+    }
+  ],
+  "metricOptions": [
+    "mean_score",
+    "std_score",
+    "max_score",
+    "min_score",
+    "score_range",
+    "problem_count",
+    "candidate_count"
+  ],
+  "metricHints": {
+    "mean_score": "mean candidate score across all cached candidates",
+    "score_range": "max - min candidate score within each cache"
+  },
+  "conclusions": [
+    "very small AIME-only patch 比统一大改更稳。",
+    "复杂 router / head / EM 路线有局部信号，但没稳定转成更强主提交。",
+    "保守保留 baseline 其余 cache，是当前最稳的工程决策。"
+  ]
+}

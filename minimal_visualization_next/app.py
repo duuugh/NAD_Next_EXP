@@ -20,6 +20,7 @@ License: MIT
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import logging
 import os
@@ -29,7 +30,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any
 
 import numpy as np
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_from_directory
 
 from nad.io import build_problem_catalog, detect_nad_next_cache, load_nad_next_index, NadNextLoader
 
@@ -779,6 +780,379 @@ def index():
     from flask import request
     base_url = request.script_root or ""
     return render_template("index.html", base_url=base_url)
+
+
+@app.route("/groupica-console")
+def groupica_console():
+    """Serve a style-matched interactive dashboard page."""
+    base_url = request.script_root or ""
+    return render_template("groupica_console_mock.html", base_url=base_url)
+
+
+@app.route("/research_report")
+def research_report():
+    """Serve the interactive research report page based on WORKLOG2.0."""
+    from flask import request
+    base_url = request.script_root or ""
+    return render_template("research_report.html", base_url=base_url)
+
+
+def _load_json_if_exists(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(data, dict):
+            return data
+    except Exception as exc:
+        logger.warning(f"Failed to read JSON from {path}: {exc}")
+    return {}
+
+
+def _selector_accuracy_from_file(data: Dict[str, Any], key_hint: str) -> Optional[float]:
+    selector_accuracy = data.get("selector_accuracy", {})
+    if not isinstance(selector_accuracy, dict):
+        return None
+    for selector_name, score in selector_accuracy.items():
+        if key_hint in str(selector_name):
+            try:
+                return round(float(score), 2)
+            except (TypeError, ValueError):
+                return None
+    return None
+
+
+def _collect_changed_counts(cache_notes: Dict[str, Any], targets: List[str]) -> List[Dict[str, Any]]:
+    rows: List[Dict[str, Any]] = []
+    for cache_key in targets:
+        info = cache_notes.get(cache_key, {})
+        changed = info.get("changed_count")
+        if changed is None:
+            changed_ids = info.get("changed_problem_ids", [])
+            changed = len(changed_ids) if isinstance(changed_ids, list) else 0
+        problem_count = int(info.get("problem_count", 0) or 0)
+        rows.append({
+            "cache_key": cache_key,
+            "changed_count": int(changed),
+            "problem_count": problem_count,
+        })
+    return rows
+
+
+def _build_research_report_data() -> Dict[str, Any]:
+    repo_root = Path(__file__).resolve().parent.parent
+    result_dir = repo_root / "result"
+
+    a1_acc = _load_json_if_exists(result_dir / "a1_medoid_activation_aime24_accuracy.json")
+    version_a_acc = _load_json_if_exists(result_dir / "versionA_medoid_tail_warning_aime24_accuracy.json")
+    mixed_v2_notes = _load_json_if_exists(
+        result_dir / "best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit_notes.json"
+    )
+    mixed_v3_notes = _load_json_if_exists(
+        result_dir / "best_of_n_nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto_submit_notes.json"
+    )
+
+    ranking_rows: List[Dict[str, Any]] = []
+    ranking_path = repo_root / "selector_rankings_20260330_023531.csv"
+    if ranking_path.exists():
+        try:
+            with ranking_path.open(encoding="utf-8") as fp:
+                reader = csv.DictReader(fp)
+                for row in reader:
+                    ranking_rows.append({
+                        "selector": row.get("selector", ""),
+                        "rank": int(row.get("rank", "0") or 0),
+                        "micro_accuracy": round(float(row.get("micro_accuracy", "0") or 0) * 100.0, 2),
+                    })
+        except Exception as exc:
+            logger.warning(f"Failed to parse ranking CSV {ranking_path}: {exc}")
+
+    ranking_rows = sorted(
+        [r for r in ranking_rows if r.get("selector")],
+        key=lambda x: x["rank"],
+    )
+
+    method_name_v2 = mixed_v2_notes.get("method_name", "nad_mixed_v2_aime_top2_gap1e3_logprob")
+    method_name_v3 = mixed_v3_notes.get("method_name", "nad_mixed_v3_aime_top2_gap1e3_logprob_tailveto")
+
+    primary_caches = [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+    ]
+    mixed_v2_cache_notes = mixed_v2_notes.get("cache_keys", {}) if isinstance(mixed_v2_notes.get("cache_keys"), dict) else {}
+    mixed_v3_cache_notes = mixed_v3_notes.get("cache_keys", {}) if isinstance(mixed_v3_notes.get("cache_keys"), dict) else {}
+    changed_scan = {
+        "mixed_v2": _collect_changed_counts(mixed_v2_cache_notes, primary_caches),
+        "mixed_v3": _collect_changed_counts(mixed_v3_cache_notes, primary_caches),
+    }
+
+    a1_score = _selector_accuracy_from_file(a1_acc, "medoid_activation_tiebreak")
+    version_a_score = _selector_accuracy_from_file(version_a_acc, "medoid_tail_warning")
+
+    schemes = [
+        {
+            "name": method_name_v2,
+            "display_name": "mixed_v2 (logprob tie-break)",
+            "tier": "best",
+            "summary": "当前阶段 leaderboard 最优参考方案（WORKLOG2.0结论）",
+            "evidence": "external_feedback",
+            "local_accuracy": None,
+            "status": "recommended",
+        },
+        {
+            "name": "medoid_baseline",
+            "display_name": "medoid baseline",
+            "tier": "reference",
+            "summary": "作为 activation 系实验底座，单 cache 表现稳定",
+            "evidence": "local_eval",
+            "local_accuracy": 80.00,
+            "status": "reference",
+        },
+        {
+            "name": "A1_medoid_activation_tiebreak",
+            "display_name": "A1: medoid + activation tie-break",
+            "tier": "failed",
+            "summary": "单 cache 从 80.00% 降到 76.67%",
+            "evidence": "local_eval",
+            "local_accuracy": a1_score,
+            "status": "not_recommended",
+        },
+        {
+            "name": "VersionA_medoid_tail_warning",
+            "display_name": "Version A: medoid + tail warning",
+            "tier": "neutral",
+            "summary": "单 cache 与 baseline 持平，几乎零触发",
+            "evidence": "local_eval",
+            "local_accuracy": version_a_score,
+            "status": "neutral",
+        },
+        {
+            "name": method_name_v3,
+            "display_name": "mixed_v3: logprob + tail warning veto",
+            "tier": "failed",
+            "summary": "本地 DS-R1 AIME 合并 +1，但 leaderboard 平均排名下降",
+            "evidence": "mixed",
+            "local_accuracy": 76.67,
+            "status": "not_recommended",
+        },
+    ]
+
+    timeline = [
+        {
+            "id": "stage_1",
+            "title": "A1 最小实验",
+            "period": "WORKLOG2.0 §10",
+            "focus": "medoid + activation tie-break",
+            "result": "24/30 -> 23/30，未成立",
+            "status": "failed",
+        },
+        {
+            "id": "stage_2",
+            "title": "Version A",
+            "period": "WORKLOG2.0 §14",
+            "focus": "medoid + tail warning (保守 veto)",
+            "result": "24/30 -> 24/30，零触发",
+            "status": "neutral",
+        },
+        {
+            "id": "stage_3",
+            "title": "mixed_v2 主线确立",
+            "period": "WORKLOG2.0 §15",
+            "focus": "top2 + gap=1e-3 + logprob",
+            "result": "外部反馈最稳，成为优先基线",
+            "status": "best",
+        },
+        {
+            "id": "stage_4",
+            "title": "mixed_v3 挂载 activation",
+            "period": "WORKLOG2.0 §16-17",
+            "focus": "logprob baseline + tail warning veto",
+            "result": "本地小增益，外部平均排名下降",
+            "status": "failed",
+        },
+    ]
+
+    return {
+        "title": "NAD_Next 研究汇报（基于 WORKLOG2.0）",
+        "last_updated": "2026-04-13",
+        "current_recommendation": {
+            "method": "nad_mixed_v2_aime_top2_gap1e3_logprob",
+            "why": "在 WORKLOG2.0 阶段结论中最稳、最适合继续小步改良",
+            "next_step": "以 mixed_v2 为底座继续 very small 可归因改动",
+        },
+        "timeline": timeline,
+        "schemes": schemes,
+        "selector_rankings": ranking_rows,
+        "changed_scan": changed_scan,
+        "case_studies": [
+            {"problem_id": "61", "image": "activation_61.png", "note": "差异清晰：正确与错误轨迹分离明显"},
+            {"problem_id": "70", "image": "activation_70.png", "note": "趋势相似但弱于 61"},
+            {"problem_id": "78", "image": "activation_78.png", "note": "可观察到 tail warning 候选"},
+            {"problem_id": "80", "image": "activation_80.png", "note": "mixed_v3 在本地修正成功的代表题"},
+            {"problem_id": "82", "image": "activation_82.png", "note": "tail signal 存在但未进入有效决策边界"},
+            {"problem_id": "85", "image": "activation_85.png", "note": "触发但未转化为外部收益"},
+        ],
+    }
+
+
+def _to_float(value: Any) -> Optional[float]:
+    try:
+        if value is None:
+            return None
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _normalize_alpha_tag(tag: Any) -> str:
+    if tag is None:
+        return ""
+    digits = "".join(ch for ch in str(tag) if ch.isdigit())
+    if not digits:
+        return ""
+    return digits.zfill(3)
+
+
+def _build_early_stop_main_result_data() -> Dict[str, Any]:
+    repo_root = Path(__file__).resolve().parent.parent
+    result_dir = repo_root / "result"
+
+    sweep = _load_json_if_exists(result_dir / "early_stop_mean_confidence_trimmed_alpha_sweep_eval.json")
+    variants = sweep.get("variants", {}) if isinstance(sweep.get("variants"), dict) else {}
+
+    alpha_sweep: List[Dict[str, Any]] = []
+    for tag, payload in variants.items():
+        if not isinstance(payload, dict):
+            continue
+        overall = payload.get("overall", {}) if isinstance(payload.get("overall"), dict) else {}
+        alpha = _to_float(payload.get("alpha"))
+        alpha_sweep.append({
+            "tag": _normalize_alpha_tag(tag),
+            "alpha": alpha,
+            "auc_auroc": _to_float(overall.get("AUC-AUROC")),
+            "auc_selacc": _to_float(overall.get("AUC-SelAcc")),
+            "auroc_100": _to_float(overall.get("AUROC@100%")),
+            "stop_100": _to_float(overall.get("Stop@100%")),
+            "earliest_over_06": _to_float(overall.get("Earliest>0.6")),
+        })
+
+    alpha_sweep = sorted(
+        alpha_sweep,
+        key=lambda row: (
+            row["alpha"] is None,
+            row["alpha"] if row["alpha"] is not None else 0.0,
+            row["tag"],
+        ),
+    )
+
+    selection = sweep.get("selection", {}) if isinstance(sweep.get("selection"), dict) else {}
+    selected_tag = _normalize_alpha_tag(selection.get("selected_alpha_tag"))
+    if not selected_tag and selection.get("selected_alpha") is not None:
+        selected_alpha_num = _to_float(selection.get("selected_alpha"))
+        if selected_alpha_num is not None:
+            selected_tag = str(int(round(selected_alpha_num * 100))).zfill(3)
+    if not selected_tag and alpha_sweep:
+        selected_tag = alpha_sweep[-1]["tag"]
+
+    selected_row = next((row for row in alpha_sweep if row["tag"] == selected_tag), None)
+
+    selected_eval = _load_json_if_exists(
+        result_dir / f"early_stop_mean_confidence_variants_eval_trimmed_alpha{selected_tag}.json"
+    )
+    evals = selected_eval.get("evaluations", {}) if isinstance(selected_eval.get("evaluations"), dict) else {}
+    display_names = {
+        "confidence_only": "confidence only",
+        "confidence_plus_dynamics_conservative": "confidence + dynamics",
+        "dynamics_only_conservative": "dynamics only",
+    }
+    method_order = {
+        "confidence_only": 1,
+        "dynamics_only_conservative": 2,
+        "confidence_plus_dynamics_conservative": 3,
+    }
+
+    variant_overall: List[Dict[str, Any]] = []
+    for method_key, payload in evals.items():
+        if not isinstance(payload, dict):
+            continue
+        overall = payload.get("overall", {}) if isinstance(payload.get("overall"), dict) else {}
+        variant_overall.append({
+            "method_key": method_key,
+            "display_name": display_names.get(method_key, method_key),
+            "auc_auroc": _to_float(overall.get("AUC-AUROC")),
+            "auc_selacc": _to_float(overall.get("AUC-SelAcc")),
+            "auroc_100": _to_float(overall.get("AUROC@100%")),
+            "stop_100": _to_float(overall.get("Stop@100%")),
+            "earliest_over_06": _to_float(overall.get("Earliest>0.6")),
+        })
+
+    variant_overall = sorted(
+        variant_overall,
+        key=lambda row: (method_order.get(row["method_key"], 99), row["display_name"]),
+    )
+
+    delta_info = selected_eval.get("delta", {}) if isinstance(selected_eval.get("delta"), dict) else {}
+    plus_delta = delta_info.get("confidence_plus_minus_confidence_only", {})
+    plus_delta_overall = plus_delta.get("overall", {}) if isinstance(plus_delta, dict) else {}
+
+    validate = _load_json_if_exists(result_dir / f"early_stop_submission_ready_alpha{selected_tag}_validate.json")
+    validate_summary = validate.get("summary", {}) if isinstance(validate.get("summary"), dict) else {}
+
+    return {
+        "available": bool(alpha_sweep),
+        "selected_alpha_tag": selected_tag,
+        "selected_alpha": selected_row.get("alpha") if selected_row else _to_float(selection.get("selected_alpha")),
+        "alpha_sweep": alpha_sweep,
+        "selection": selection,
+        "variant_overall": variant_overall,
+        "plus_vs_confidence_delta": {
+            "auc_auroc": _to_float(plus_delta_overall.get("AUC-AUROC")),
+            "auc_selacc": _to_float(plus_delta_overall.get("AUC-SelAcc")),
+            "auroc_100": _to_float(plus_delta_overall.get("AUROC@100%")),
+            "stop_100": _to_float(plus_delta_overall.get("Stop@100%")),
+            "earliest_over_06": _to_float(plus_delta_overall.get("Earliest>0.6")),
+        },
+        "validate_summary": validate_summary,
+    }
+
+
+@app.route("/api/research_report_data")
+def api_research_report_data():
+    """Return structured data for the WORKLOG2.0 report dashboard."""
+    return jsonify(_build_research_report_data())
+
+
+@app.route("/api/research_image/<path:image_name>")
+def api_research_image(image_name: str):
+    """
+    Serve whitelisted activation images for report case studies.
+
+    Reads image files from /home/jovyan/work (workspace parent of repository).
+    """
+    allowed = {
+        "activation_61.png",
+        "activation_70.png",
+        "activation_78.png",
+        "activation_80.png",
+        "activation_82.png",
+        "activation_85.png",
+    }
+    if image_name not in allowed:
+        return jsonify({"error": f"Unsupported image: {image_name}"}), 404
+
+    image_root = Path(__file__).resolve().parent.parent.parent
+    image_path = image_root / image_name
+    if not image_path.exists():
+        return jsonify({"error": f"Image not found: {image_name}"}), 404
+    return send_from_directory(str(image_root), image_name)
+
+
+@app.route("/api/early_stop_main_result_data")
+def api_early_stop_main_result_data():
+    """Return compact early-stop main-result summary from result/*.json."""
+    return jsonify(_build_early_stop_main_result_data())
 
 
 # =============================================================================

@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-04-23T13:14:47+00:00",
+  "nodes": [
+    {
+      "id": "timeline-es-confidence",
+      "task": "early_stop",
+      "title": "confidence-only baseline 固化",
+      "status": "important",
+      "summary": "先用纯 confidence 路线建立完整 labeled benchmark 对照，为后续 plugin/router 判断提供统一参照。"
+    },
+    {
+      "id": "timeline-es-dyn-local",
+      "task": "early_stop",
+      "title": "dynamics_v2_local 做 benchmark 级审计",
+      "status": "important",
+      "summary": "不做全局启用，逐 benchmark 看 AUC 与 Stop@100 变化，再决定是否值得进入 router。"
+    },
+    {
+      "id": "timeline-es-router",
+      "task": "early_stop",
+      "title": "conservative router 成为最终提交",
+      "status": "final_best",
+      "summary": "只在确认收益的 DS-R1/aime24、aime25、hmmt25 启用 dynamics；其他 cache 保守禁用。"
+    },
+    {
+      "id": "timeline-bon-v1",
+      "task": "best_of_n",
+      "title": "mixed_v1_complete 作为统一 baseline",
+      "status": "important",
+      "summary": "先把跨 cache baseline 拼完整，再在此基础上做 targeted patch，而不是直接推翻整体结构。"
+    },
+    {
+      "id": "timeline-bon-v2-selfcert",
+      "task": "best_of_n",
+      "title": "AIME 定向 top3/self-cert patch",
+      "status": "important",
+      "summary": "验证 very small patch 对 AIME 有价值，但仍需继续收缩风险面。"
+    },
+    {
+      "id": "timeline-bon-v2-final",
+      "task": "best_of_n",
+      "title": "top2 gap + tok_logprob 成为最终主线",
+      "status": "final_best",
+      "summary": "最终选更小、更稳的 AIME-only patch，其余 cache 保持 baseline，不做统一激进修改。"
+    },
+    {
+      "id": "timeline-bon-v5",
+      "task": "best_of_n",
+      "title": "cluster router 没有转成主提交",
+      "status": "deprecated",
+      "summary": "更复杂的结构化 router 增加了系统复杂度，但没有带来足够稳定的整体收益。"
+    },
+    {
+      "id": "timeline-bon-v6",
+      "task": "best_of_n",
+      "title": "local head 提供候选级信号",
+      "status": "promising",
+      "summary": "candidate-level 模型有解释价值，但最终只支持极小 patch，不足以替代保守主线。"
+    },
+    {
+      "id": "timeline-cross-1",
+      "task": "cross",
+      "title": "小 patch 胜过大一统改写",
+      "status": "important",
+      "summary": "两个任务都收敛到相同结论：局部、可验证的 patch 比全局重写更稳，更适合最终提交。"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "task": "best_of_n",
+  "method_name": "nad_mixed_v1_complete",
+  "source_partial": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v1_ds_r1_partial.json",
+  "filled_keys": [
+    "Qwen3-4B/aime24",
+    "Qwen3-4B/aime25",
+    "Qwen3-4B/brumo25",
+    "Qwen3-4B/gpqa",
+    "Qwen3-4B/hmmt25",
+    "Qwen3-4B/lcb_v5"
+  ],
+  "dataset_modes_requested": {
+    "aime24": "knn",
+    "aime25": "knn",
+    "brumo25": "vote",
+    "gpqa": "vote",
+    "hmmt25": "vote",
+    "lcb_v5": "max_activation"
+  },
+  "qwen_cache_root": "/home/jovyan/public-ro/MUI_HUB/cache_test/Qwen3-4B-Thinking-2507",
+  "qwen_cache_dirs": {
+    "aime24": "cache_neuron_output_1_act_no_rms_20250917_070758",
+    "aime25": "cache_neuron_output_1_act_no_rms_20250917_091548",
+    "brumo25": "cache_neuron_output_1_act_no_rms_20251125_024402",
+    "gpqa": "cache_neuron_output_1_act_no_rms_20250917_143310",
+    "hmmt25": "cache_neuron_output_1_act_no_rms_20251125_054608",
+    "livecodebench_v5": "cache_neuron_output_1_act_no_rms_20250920_094942"
+  },
+  "fallbacks": {
+    "brumo25": "knn",
+    "gpqa": "knn",
+    "hmmt25": "knn"
+  },
+  "validation": {
+    "required_key_count": 12,
+    "present_key_count": 12,
+    "missing_keys": []
+  },
+  "note": "Qwen3-4B vote-mode datasets fell back to knn scores because the local cache_test artifacts do not include evaluation_report_compact.json."
+}

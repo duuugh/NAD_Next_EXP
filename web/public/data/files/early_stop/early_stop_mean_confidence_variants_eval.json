@@ -1,0 +1,2803 @@
+{
+  "inputs": {
+    "confidence_only": "result/early_stop_mean_confidence.json",
+    "confidence_plus_dynamics_conservative": "result/early_stop_mean_confidence_plus_dyn_conservative.json",
+    "dynamics_only": "/home/jovyan/work/NAD_Next/result/early_stop_dynamics_router_conservative_submit.json",
+    "policy": "/home/jovyan/work/NAD_Next/result/dynamics_policy_conservative.json"
+  },
+  "evaluations": {
+    "confidence_only": {
+      "overall": {
+        "labeled_cache_count": 6,
+        "cache_count": 12,
+        "AUC-AUROC": 0.6127887159213361,
+        "AUC-SelAcc": 0.607876670900623,
+        "AUROC@100%": 0.5355187688804925,
+        "Stop@100%": 0.5722514566825944,
+        "Earliest>0.6": 0.22499999999999998
+      },
+      "per_cache": {
+        "DS-R1/aime24": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.6,
+              "AUROC": 0.712962962962963,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.6,
+              "AUROC": 0.7569444444444444,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.6199095022624435,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.6,
+              "AUROC": 0.5925925925925927,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.6153846153846154,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.7,
+              "AUROC": 0.6402116402116402,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.5226244343891403,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.4638009049773756,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6,
+              "AUROC": 0.40046296296296297,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.42533936651583704,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.5750233426704014,
+          "AUC-SelAcc": 0.5933333333333332,
+          "AUROC@10%": 0.712962962962963,
+          "AUROC@50%": 0.6153846153846154,
+          "AUROC@100%": 0.42533936651583704,
+          "Stop@100%": 0.5666666666666667,
+          "Earliest>0.6": 0.6
+        },
+        "DS-R1/aime25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6022727272727273,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6761363636363636,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6903409090909091,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.7,
+              "AUROC": 0.5343915343915344,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.5375,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.45499999999999996,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.6333333333333333,
+              "AUROC": 0.6267942583732057,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.525,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.485,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6333333333333333,
+              "AUROC": 0.43540669856459324,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.5567842491329335,
+          "AUC-SelAcc": 0.6833333333333332,
+          "AUROC@10%": 0.6022727272727273,
+          "AUROC@50%": 0.5375,
+          "AUROC@100%": 0.43540669856459324,
+          "Stop@100%": 0.6333333333333333,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/brumo25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.7,
+              "AUROC": 0.7354497354497354,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.7666666666666667,
+              "AUROC": 0.670807453416149,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.7,
+              "AUROC": 0.6375661375661376,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6051136363636364,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.7666666666666667,
+              "AUROC": 0.5962732919254659,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.7,
+              "AUROC": 0.6878306878306879,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6647727272727273,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.7,
+              "AUROC": 0.6084656084656085,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.7,
+              "AUROC": 0.5026455026455027,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6333333333333333,
+              "AUROC": 0.46411483253588515,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.6173039613471535,
+          "AUC-SelAcc": 0.7133333333333333,
+          "AUROC@10%": 0.7354497354497354,
+          "AUROC@50%": 0.5962732919254659,
+          "AUROC@100%": 0.46411483253588515,
+          "Stop@100%": 0.6333333333333333,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/gpqa": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.6060606060606061,
+              "AUROC": 0.6972222222222222,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.6414141414141414,
+              "AUROC": 0.6945769102805811,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.6161616161616161,
+              "AUROC": 0.6640422778257118,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.601010101010101,
+              "AUROC": 0.6893415594085734,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.6212121212121212,
+              "AUROC": 0.6945257452574525,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.6414141414141414,
+              "AUROC": 0.6902517467006766,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.6060606060606061,
+              "AUROC": 0.6946581196581196,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.6212121212121212,
+              "AUROC": 0.6475338753387533,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6262626262626263,
+              "AUROC": 0.666848299912816,
+              "selected_count": 198
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6313131313131313,
+              "AUROC": 0.6733150684931507,
+              "selected_count": 198
+            }
+          ],
+          "AUC-AUROC": 0.6812315825098058,
+          "AUC-SelAcc": 0.6212121212121212,
+          "AUROC@10%": 0.6972222222222222,
+          "AUROC@50%": 0.6945257452574525,
+          "AUROC@100%": 0.6733150684931507,
+          "Stop@100%": 0.6313131313131313,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/hmmt25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.5333333333333333,
+              "AUROC": 0.8013392857142857,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.8755656108597284,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.4666666666666667,
+              "AUROC": 0.7589285714285714,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.43333333333333335,
+              "AUROC": 0.7669683257918551,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.4,
+              "AUROC": 0.6851851851851852,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.4666666666666667,
+              "AUROC": 0.7589285714285714,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.4666666666666667,
+              "AUROC": 0.7142857142857142,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.43333333333333335,
+              "AUROC": 0.669683257918552,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.43333333333333335,
+              "AUROC": 0.6877828054298643,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.4,
+              "AUROC": 0.6574074074074074,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.7376074735449736,
+          "AUC-SelAcc": 0.4600000000000001,
+          "AUROC@10%": 0.8013392857142857,
+          "AUROC@50%": 0.6851851851851852,
+          "AUROC@100%": 0.6574074074074074,
+          "Stop@100%": 0.4,
+          "Earliest>0.6": null
+        },
+        "DS-R1/lcb_v5": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.5868263473053892,
+              "AUROC": 0.47241940254362613,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.5568862275449101,
+              "AUROC": 0.46207497820401044,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.5748502994011976,
+              "AUROC": 0.49295774647887325,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.5868263473053892,
+              "AUROC": 0.5258059745637386,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.592814371257485,
+              "AUROC": 0.488116458704694,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.562874251497006,
+              "AUROC": 0.5029874672107257,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.592814371257485,
+              "AUROC": 0.5142602495543671,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.562874251497006,
+              "AUROC": 0.522369571553483,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.5748502994011976,
+              "AUROC": 0.5492957746478873,
+              "selected_count": 167
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.5688622754491018,
+              "AUROC": 0.5575292397660818,
+              "selected_count": 167
+            }
+          ],
+          "AUC-AUROC": 0.5087816863227488,
+          "AUC-SelAcc": 0.5760479041916169,
+          "AUROC@10%": 0.47241940254362613,
+          "AUROC@50%": 0.488116458704694,
+          "AUROC@100%": 0.5575292397660818,
+          "Stop@100%": 0.5688622754491018,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/aime24": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/aime25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/brumo25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/gpqa": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/hmmt25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/lcb_v5": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        }
+      }
+    },
+    "confidence_plus_dynamics_conservative": {
+      "overall": {
+        "labeled_cache_count": 6,
+        "cache_count": 12,
+        "AUC-AUROC": 0.632645602188568,
+        "AUC-SelAcc": 0.6473211153450674,
+        "AUROC@100%": 0.5692524493917789,
+        "Stop@100%": 0.6111403455714833,
+        "Earliest>0.6": 0.1
+      },
+      "per_cache": {
+        "DS-R1/aime24": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.7,
+              "AUROC": 0.746031746031746,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.8181818181818181,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.74,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.7575000000000001,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.7045454545454546,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.8,
+              "AUROC": 0.6354166666666667,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.7,
+              "AUROC": 0.5925925925925926,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.7,
+              "AUROC": 0.6349206349206349,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.515,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.52,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.6664188912938913,
+          "AUC-SelAcc": 0.7033333333333334,
+          "AUROC@10%": 0.746031746031746,
+          "AUROC@50%": 0.7045454545454546,
+          "AUROC@100%": 0.52,
+          "Stop@100%": 0.6666666666666666,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/aime25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.8,
+              "AUROC": 0.6666666666666667,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.8,
+              "AUROC": 0.7083333333333334,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6903409090909092,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.5284090909090909,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.4715909090909091,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.7,
+              "AUROC": 0.5079365079365079,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.5227272727272727,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.45454545454545453,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.515,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.525,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.5590550144300145,
+          "AUC-SelAcc": 0.73,
+          "AUROC@10%": 0.6666666666666667,
+          "AUROC@50%": 0.4715909090909091,
+          "AUROC@100%": 0.525,
+          "Stop@100%": 0.6666666666666666,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/brumo25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.7,
+              "AUROC": 0.7354497354497354,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.7666666666666667,
+              "AUROC": 0.670807453416149,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.7,
+              "AUROC": 0.6375661375661376,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6051136363636364,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.7666666666666667,
+              "AUROC": 0.5962732919254659,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.7,
+              "AUROC": 0.6878306878306879,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.7333333333333333,
+              "AUROC": 0.6647727272727273,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.7,
+              "AUROC": 0.6084656084656085,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.7,
+              "AUROC": 0.5026455026455027,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6333333333333333,
+              "AUROC": 0.46411483253588515,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.6173039613471535,
+          "AUC-SelAcc": 0.7133333333333333,
+          "AUROC@10%": 0.7354497354497354,
+          "AUROC@50%": 0.5962732919254659,
+          "AUROC@100%": 0.46411483253588515,
+          "Stop@100%": 0.6333333333333333,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/gpqa": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.6060606060606061,
+              "AUROC": 0.6972222222222222,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.6414141414141414,
+              "AUROC": 0.6945769102805811,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.6161616161616161,
+              "AUROC": 0.6640422778257118,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.601010101010101,
+              "AUROC": 0.6893415594085734,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.6212121212121212,
+              "AUROC": 0.6945257452574525,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.6414141414141414,
+              "AUROC": 0.6902517467006766,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.6060606060606061,
+              "AUROC": 0.6946581196581196,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.6212121212121212,
+              "AUROC": 0.6475338753387533,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6262626262626263,
+              "AUROC": 0.666848299912816,
+              "selected_count": 198
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6313131313131313,
+              "AUROC": 0.6733150684931507,
+              "selected_count": 198
+            }
+          ],
+          "AUC-AUROC": 0.6812315825098058,
+          "AUC-SelAcc": 0.6212121212121212,
+          "AUROC@10%": 0.6972222222222222,
+          "AUROC@50%": 0.6945257452574525,
+          "AUROC@100%": 0.6733150684931507,
+          "Stop@100%": 0.6313131313131313,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/hmmt25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.7275,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.6333333333333333,
+              "AUROC": 0.8229665071770335,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.4666666666666667,
+              "AUROC": 0.8660714285714286,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.5,
+              "AUROC": 0.8311111111111111,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.5333333333333333,
+              "AUROC": 0.7522321428571429,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.5333333333333333,
+              "AUROC": 0.7767857142857143,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.5666666666666667,
+              "AUROC": 0.7963800904977376,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.5,
+              "AUROC": 0.6977777777777778,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.5,
+              "AUROC": 0.6844444444444444,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.5,
+              "AUROC": 0.6755555555555556,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.7630824772277947,
+          "AUC-SelAcc": 0.54,
+          "AUROC@10%": 0.7275,
+          "AUROC@50%": 0.7522321428571429,
+          "AUROC@100%": 0.6755555555555556,
+          "Stop@100%": 0.5,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/lcb_v5": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.5868263473053892,
+              "AUROC": 0.47241940254362613,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.5568862275449101,
+              "AUROC": 0.46207497820401044,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.5748502994011976,
+              "AUROC": 0.49295774647887325,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.5868263473053892,
+              "AUROC": 0.5258059745637386,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.592814371257485,
+              "AUROC": 0.488116458704694,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.562874251497006,
+              "AUROC": 0.5029874672107257,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.592814371257485,
+              "AUROC": 0.5142602495543671,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.562874251497006,
+              "AUROC": 0.522369571553483,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.5748502994011976,
+              "AUROC": 0.5492957746478873,
+              "selected_count": 167
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.5688622754491018,
+              "AUROC": 0.5575292397660818,
+              "selected_count": 167
+            }
+          ],
+          "AUC-AUROC": 0.5087816863227488,
+          "AUC-SelAcc": 0.5760479041916169,
+          "AUROC@10%": 0.47241940254362613,
+          "AUROC@50%": 0.488116458704694,
+          "AUROC@100%": 0.5575292397660818,
+          "Stop@100%": 0.5688622754491018,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/aime24": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/aime25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/brumo25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/gpqa": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/hmmt25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/lcb_v5": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        }
+      }
+    },
+    "dynamics_only_conservative": {
+      "overall": {
+        "labeled_cache_count": 6,
+        "cache_count": 12,
+        "AUC-AUROC": 0.5255653496664366,
+        "AUC-SelAcc": 0.7326286820298797,
+        "AUROC@100%": 0.5,
+        "Stop@100%": 0.715962015363213,
+        "Earliest>0.6": 0.1
+      },
+      "per_cache": {
+        "DS-R1/aime24": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.8,
+              "AUROC": 0.5555555555555556,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.8,
+              "AUROC": 0.2916666666666667,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.312,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.352,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.304,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.32,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.352,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.7666666666666667,
+              "AUROC": 0.45962732919254656,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.7666666666666667,
+              "AUROC": 0.4285714285714286,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.7,
+              "AUROC": 0.5,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.3875420979986197,
+          "AUC-SelAcc": 0.8,
+          "AUROC@10%": 0.5555555555555556,
+          "AUROC@50%": 0.304,
+          "AUROC@100%": 0.5,
+          "Stop@100%": 0.7,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/aime25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.42800000000000005,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.5640000000000001,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.64,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.6759999999999999,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.696,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.74,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.716,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.708,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.708,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.8333333333333334,
+              "AUROC": 0.5,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.6376,
+          "AUC-SelAcc": 0.8333333333333334,
+          "AUROC@10%": 0.42800000000000005,
+          "AUROC@50%": 0.696,
+          "AUROC@100%": 0.5,
+          "Stop@100%": 0.8333333333333334,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/brumo25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.8,
+              "AUROC": 0.5,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.5,
+          "AUC-SelAcc": 0.8,
+          "AUROC@10%": 0.5,
+          "AUROC@50%": 0.5,
+          "AUROC@100%": 0.5,
+          "Stop@100%": 0.8,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/gpqa": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.696969696969697,
+              "AUROC": 0.5,
+              "selected_count": 198
+            }
+          ],
+          "AUC-AUROC": 0.5,
+          "AUC-SelAcc": 0.696969696969697,
+          "AUROC@10%": 0.5,
+          "AUROC@50%": 0.5,
+          "AUROC@100%": 0.5,
+          "Stop@100%": 0.696969696969697,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/hmmt25": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.4975,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.7725,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.725,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.74,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.715,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.65,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.605,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.5625,
+              "selected_count": 30
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.5149999999999999,
+              "selected_count": 30
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.6666666666666666,
+              "AUROC": 0.5,
+              "selected_count": 30
+            }
+          ],
+          "AUC-AUROC": 0.62825,
+          "AUC-SelAcc": 0.6666666666666667,
+          "AUROC@10%": 0.4975,
+          "AUROC@50%": 0.715,
+          "AUROC@100%": 0.5,
+          "Stop@100%": 0.6666666666666666,
+          "Earliest>0.6": 0.1
+        },
+        "DS-R1/lcb_v5": {
+          "labeled": true,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": 0.5988023952095808,
+              "AUROC": 0.5,
+              "selected_count": 167
+            }
+          ],
+          "AUC-AUROC": 0.5,
+          "AUC-SelAcc": 0.5988023952095808,
+          "AUROC@10%": 0.5,
+          "AUROC@50%": 0.5,
+          "AUROC@100%": 0.5,
+          "Stop@100%": 0.5988023952095808,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/aime24": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/aime25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/brumo25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/gpqa": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/hmmt25": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        },
+        "Qwen3-4B/lcb_v5": {
+          "labeled": false,
+          "by_budget": [
+            {
+              "budget": 0.1,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.2,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.3,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.4,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.5,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.6,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.7,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.8,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 0.9,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            },
+            {
+              "budget": 1.0,
+              "SelAcc": null,
+              "AUROC": null,
+              "selected_count": 0
+            }
+          ],
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null,
+          "Earliest>0.6": null
+        }
+      }
+    }
+  },
+  "delta": {
+    "confidence_plus_minus_confidence_only": {
+      "overall": {
+        "AUC-AUROC": 0.01985688626723192,
+        "AUC-SelAcc": 0.03944444444444439,
+        "AUROC@100%": 0.033733680511286335,
+        "Stop@100%": 0.03888888888888897,
+        "Earliest>0.6": -0.12499999999999997
+      },
+      "per_cache": {
+        "DS-R1/aime24": {
+          "AUC-AUROC": 0.09139554862348986,
+          "AUC-SelAcc": 0.11000000000000021,
+          "AUROC@10%": 0.033068783068783025,
+          "AUROC@50%": 0.08916083916083917,
+          "AUROC@100%": 0.09466063348416298,
+          "Stop@100%": 0.09999999999999998
+        },
+        "DS-R1/aime25": {
+          "AUC-AUROC": 0.0022707652970810344,
+          "AUC-SelAcc": 0.046666666666666745,
+          "AUROC@10%": 0.06439393939393945,
+          "AUROC@50%": -0.06590909090909086,
+          "AUROC@100%": 0.08959330143540678,
+          "Stop@100%": 0.033333333333333326
+        },
+        "DS-R1/brumo25": {
+          "AUC-AUROC": 0.0,
+          "AUC-SelAcc": 0.0,
+          "AUROC@10%": 0.0,
+          "AUROC@50%": 0.0,
+          "AUROC@100%": 0.0,
+          "Stop@100%": 0.0
+        },
+        "DS-R1/gpqa": {
+          "AUC-AUROC": 0.0,
+          "AUC-SelAcc": 0.0,
+          "AUROC@10%": 0.0,
+          "AUROC@50%": 0.0,
+          "AUROC@100%": 0.0,
+          "Stop@100%": 0.0
+        },
+        "DS-R1/hmmt25": {
+          "AUC-AUROC": 0.025475003682821074,
+          "AUC-SelAcc": 0.07999999999999996,
+          "AUROC@10%": -0.07383928571428566,
+          "AUROC@50%": 0.06704695767195767,
+          "AUROC@100%": 0.018148148148148135,
+          "Stop@100%": 0.09999999999999998
+        },
+        "DS-R1/lcb_v5": {
+          "AUC-AUROC": 0.0,
+          "AUC-SelAcc": 0.0,
+          "AUROC@10%": 0.0,
+          "AUROC@50%": 0.0,
+          "AUROC@100%": 0.0,
+          "Stop@100%": 0.0
+        },
+        "Qwen3-4B/aime24": {
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null
+        },
+        "Qwen3-4B/aime25": {
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null
+        },
+        "Qwen3-4B/brumo25": {
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null
+        },
+        "Qwen3-4B/gpqa": {
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null
+        },
+        "Qwen3-4B/hmmt25": {
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null
+        },
+        "Qwen3-4B/lcb_v5": {
+          "AUC-AUROC": null,
+          "AUC-SelAcc": null,
+          "AUROC@10%": null,
+          "AUROC@50%": null,
+          "AUROC@100%": null,
+          "Stop@100%": null
+        }
+      }
+    }
+  },
+  "plugin_checks": {
+    "policy_enabled_caches": [
+      "DS-R1/aime24",
+      "DS-R1/aime25",
+      "DS-R1/hmmt25"
+    ],
+    "policy_disabled_caches": [
+      "DS-R1/brumo25",
+      "DS-R1/gpqa",
+      "DS-R1/lcb_v5"
+    ],
+    "changed_caches": [
+      "DS-R1/aime24",
+      "DS-R1/aime25",
+      "DS-R1/hmmt25"
+    ],
+    "unchanged_caches": [
+      "DS-R1/brumo25",
+      "DS-R1/gpqa",
+      "DS-R1/lcb_v5",
+      "Qwen3-4B/aime24",
+      "Qwen3-4B/aime25",
+      "Qwen3-4B/brumo25",
+      "Qwen3-4B/gpqa",
+      "Qwen3-4B/hmmt25",
+      "Qwen3-4B/lcb_v5"
+    ],
+    "disabled_unchanged": {
+      "DS-R1/brumo25": true,
+      "DS-R1/gpqa": true,
+      "DS-R1/lcb_v5": true
+    },
+    "enabled_gain": {
+      "DS-R1/aime24": {
+        "delta_AUC-AUROC": 0.09139554862348986,
+        "delta_AUC-SelAcc": 0.11000000000000021
+      },
+      "DS-R1/aime25": {
+        "delta_AUC-AUROC": 0.0022707652970810344,
+        "delta_AUC-SelAcc": 0.046666666666666745
+      },
+      "DS-R1/hmmt25": {
+        "delta_AUC-AUROC": 0.025475003682821074,
+        "delta_AUC-SelAcc": 0.07999999999999996
+      }
+    },
+    "only_expected_changed": true,
+    "expected_enabled_set": [
+      "DS-R1/aime24",
+      "DS-R1/aime25",
+      "DS-R1/hmmt25"
+    ]
+  }
+}

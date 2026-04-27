@@ -1,0 +1,79 @@
+{
+  "input_summary": "/home/jovyan/work/NAD_Next/result/dynamics_v2_local_batch_summary.json",
+  "per_benchmark": {
+    "DS-R1/aime24": {
+      "best_mode": "rho_tail_plus_neg_A_accel",
+      "delta_AUROC": null,
+      "delta_SelAcc": null,
+      "delta_Stop": null,
+      "strength": "strong",
+      "conservative_route": "rho_tail_plus_neg_A_accel",
+      "aggressive_route": "rho_tail_plus_neg_A_accel",
+      "source": "prior_validated_rule"
+    },
+    "DS-R1/aime25": {
+      "best_mode": "neg_A_accel_only",
+      "delta_AUROC": 0.13759999999999994,
+      "delta_SelAcc": 0.0,
+      "delta_Stop": 0.0,
+      "strength": "strong",
+      "conservative_route": "neg_A_accel_only",
+      "aggressive_route": "neg_A_accel_only",
+      "source": "auto_from_summary"
+    },
+    "DS-R1/gpqa": {
+      "best_mode": "rho_tail_plus_neg_A_accel",
+      "delta_AUROC": 0.00427743435318062,
+      "delta_SelAcc": 0.003030303030302939,
+      "delta_Stop": 0.0,
+      "strength": "borderline",
+      "conservative_route": "disable",
+      "aggressive_route": "rho_tail_plus_neg_A_accel",
+      "source": "auto_from_summary"
+    },
+    "DS-R1/hmmt25": {
+      "best_mode": "rho_tail_plus_neg_A_accel",
+      "delta_AUROC": 0.12824999999999998,
+      "delta_SelAcc": 0.0,
+      "delta_Stop": 0.0,
+      "strength": "strong",
+      "conservative_route": "rho_tail_plus_neg_A_accel",
+      "aggressive_route": "rho_tail_plus_neg_A_accel",
+      "source": "auto_from_summary"
+    },
+    "DS-R1/lcb_v5": {
+      "best_mode": "neg_A_accel_only",
+      "delta_AUROC": 0.017055543453826538,
+      "delta_SelAcc": 0.0029940119760479833,
+      "delta_Stop": 0.0,
+      "strength": "borderline",
+      "conservative_route": "disable",
+      "aggressive_route": "neg_A_accel_only",
+      "source": "auto_from_summary"
+    }
+  },
+  "policies": {
+    "conservative": {
+      "DS-R1/aime24": "rho_tail_plus_neg_A_accel",
+      "DS-R1/aime25": "neg_A_accel_only",
+      "DS-R1/brumo25": "disable",
+      "DS-R1/gpqa": "disable",
+      "DS-R1/hmmt25": "rho_tail_plus_neg_A_accel",
+      "DS-R1/lcb_v5": "disable"
+    },
+    "aggressive": {
+      "DS-R1/aime24": "rho_tail_plus_neg_A_accel",
+      "DS-R1/aime25": "neg_A_accel_only",
+      "DS-R1/brumo25": "disable",
+      "DS-R1/gpqa": "rho_tail_plus_neg_A_accel",
+      "DS-R1/hmmt25": "rho_tail_plus_neg_A_accel",
+      "DS-R1/lcb_v5": "neg_A_accel_only"
+    }
+  },
+  "manual_injections": {
+    "DS-R1/aime24": {
+      "route": "rho_tail_plus_neg_A_accel",
+      "reason": "prior_validated_rule"
+    }
+  }
+}

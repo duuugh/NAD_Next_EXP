@@ -1,0 +1,298 @@
+{
+  "inventory_generated_from_patterns": [
+    "best_of_n_nad_mixed_v1_complete*.json",
+    "best_of_n_nad_mixed_v2*.json",
+    "best_of_n_em_regularized_m2*.json",
+    "best_of_n_em_regularized_m4*.json",
+    "best_of_n_em_regularized_m8*.json"
+  ],
+  "count": 13,
+  "items": [
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v1_complete.json",
+      "method_name": "nad_mixed_v1_complete",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v1_complete_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v1_complete_wrapped.json",
+      "method_name": "nad_mixed_v1_complete",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v1_complete_wrapped_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit.json",
+      "method_name": "nad_mixed_v2_aime_top2_gap1e3_logprob",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_selfcert_submit.json",
+      "method_name": "nad_mixed_v2_aime_top2_gap1e3_selfcert",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_selfcert_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top3_selfcert.json",
+      "method_name": "nad_mixed_v2_aime_top3_selfcert",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top3_selfcert_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top3_selfcert_submit.json",
+      "method_name": "nad_mixed_v2_aime_top3_selfcert",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top3_selfcert_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_flipper_lcb_try_submit.json",
+      "method_name": "nad_mixed_v2_flipper_lcb_try",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_flipper_lcb_try_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_flipper_lcb_try_thr66_submit.json",
+      "method_name": "nad_mixed_v2_flipper_lcb_try_thr66",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_flipper_lcb_try_thr66_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_flipper_submit.json",
+      "method_name": "nad_mixed_v2_top2_flipper",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_flipper_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2plus_lcb_top2_gap2e3_logprob_mingroup40_submit.json",
+      "method_name": "nad_mixed_v2plus_lcb_top2_gap2e3_logprob_mingroup40",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2plus_lcb_top2_gap2e3_logprob_mingroup40_submit_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_em_regularized_m2_seed42_keepall.json",
+      "method_name": "best_of_n_em_regularized_m2_seed42_keepall",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_em_regularized_m2_seed42_keepall_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_em_regularized_m4_seed42_keepall.json",
+      "method_name": "best_of_n_em_regularized_m4_seed42_keepall",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_em_regularized_m4_seed42_keepall_notes.json"
+    },
+    {
+      "path": "/home/jovyan/work/NAD_Next/result/best_of_n_em_regularized_m8_seed42_keepall.json",
+      "method_name": "best_of_n_em_regularized_m8_seed42_keepall",
+      "task": "best_of_n",
+      "cache_keys": [
+        "DS-R1/aime24",
+        "DS-R1/aime25",
+        "DS-R1/brumo25",
+        "DS-R1/gpqa",
+        "DS-R1/hmmt25",
+        "DS-R1/lcb_v5",
+        "Qwen3-4B/aime24",
+        "Qwen3-4B/aime25",
+        "Qwen3-4B/brumo25",
+        "Qwen3-4B/gpqa",
+        "Qwen3-4B/hmmt25",
+        "Qwen3-4B/lcb_v5"
+      ],
+      "cache_key_count": 12,
+      "looks_submission_safe_full_scores": true,
+      "notes_path": "/home/jovyan/work/NAD_Next/result/best_of_n_em_regularized_m8_seed42_keepall_notes.json"
+    }
+  ]
+}

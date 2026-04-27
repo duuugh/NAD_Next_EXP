@@ -1,0 +1,468 @@
+{
+  "selector_accuracy": {
+    "medoid": 80.0,
+    "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": 76.66666666666667
+  },
+  "selector_counts": {
+    "medoid": {
+      "correct": 24,
+      "total": 30
+    },
+    "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+      "correct": 23,
+      "total": 30
+    }
+  },
+  "per_problem": {
+    "60": {
+      "problem_id": "60",
+      "selectors": {
+        "medoid": {
+          "run_index": 63,
+          "sample_id": 62,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 63,
+          "sample_id": 62,
+          "is_correct": true
+        }
+      }
+    },
+    "61": {
+      "problem_id": "61",
+      "selectors": {
+        "medoid": {
+          "run_index": 62,
+          "sample_id": 125,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 62,
+          "sample_id": 125,
+          "is_correct": true
+        }
+      }
+    },
+    "62": {
+      "problem_id": "62",
+      "selectors": {
+        "medoid": {
+          "run_index": 9,
+          "sample_id": 136,
+          "is_correct": false
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 6,
+          "sample_id": 133,
+          "is_correct": false
+        }
+      }
+    },
+    "63": {
+      "problem_id": "63",
+      "selectors": {
+        "medoid": {
+          "run_index": 43,
+          "sample_id": 234,
+          "is_correct": false
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 34,
+          "sample_id": 225,
+          "is_correct": false
+        }
+      }
+    },
+    "64": {
+      "problem_id": "64",
+      "selectors": {
+        "medoid": {
+          "run_index": 37,
+          "sample_id": 292,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 37,
+          "sample_id": 292,
+          "is_correct": true
+        }
+      }
+    },
+    "65": {
+      "problem_id": "65",
+      "selectors": {
+        "medoid": {
+          "run_index": 3,
+          "sample_id": 322,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 56,
+          "sample_id": 375,
+          "is_correct": true
+        }
+      }
+    },
+    "66": {
+      "problem_id": "66",
+      "selectors": {
+        "medoid": {
+          "run_index": 59,
+          "sample_id": 442,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 59,
+          "sample_id": 442,
+          "is_correct": true
+        }
+      }
+    },
+    "67": {
+      "problem_id": "67",
+      "selectors": {
+        "medoid": {
+          "run_index": 44,
+          "sample_id": 491,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 44,
+          "sample_id": 491,
+          "is_correct": true
+        }
+      }
+    },
+    "68": {
+      "problem_id": "68",
+      "selectors": {
+        "medoid": {
+          "run_index": 55,
+          "sample_id": 566,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 55,
+          "sample_id": 566,
+          "is_correct": true
+        }
+      }
+    },
+    "69": {
+      "problem_id": "69",
+      "selectors": {
+        "medoid": {
+          "run_index": 7,
+          "sample_id": 582,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 48,
+          "sample_id": 623,
+          "is_correct": true
+        }
+      }
+    },
+    "70": {
+      "problem_id": "70",
+      "selectors": {
+        "medoid": {
+          "run_index": 30,
+          "sample_id": 669,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 16,
+          "sample_id": 655,
+          "is_correct": true
+        }
+      }
+    },
+    "71": {
+      "problem_id": "71",
+      "selectors": {
+        "medoid": {
+          "run_index": 15,
+          "sample_id": 718,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 15,
+          "sample_id": 718,
+          "is_correct": true
+        }
+      }
+    },
+    "72": {
+      "problem_id": "72",
+      "selectors": {
+        "medoid": {
+          "run_index": 5,
+          "sample_id": 772,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 5,
+          "sample_id": 772,
+          "is_correct": true
+        }
+      }
+    },
+    "73": {
+      "problem_id": "73",
+      "selectors": {
+        "medoid": {
+          "run_index": 28,
+          "sample_id": 859,
+          "is_correct": false
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 60,
+          "sample_id": 891,
+          "is_correct": false
+        }
+      }
+    },
+    "74": {
+      "problem_id": "74",
+      "selectors": {
+        "medoid": {
+          "run_index": 9,
+          "sample_id": 904,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 9,
+          "sample_id": 904,
+          "is_correct": true
+        }
+      }
+    },
+    "75": {
+      "problem_id": "75",
+      "selectors": {
+        "medoid": {
+          "run_index": 59,
+          "sample_id": 1018,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 6,
+          "sample_id": 965,
+          "is_correct": true
+        }
+      }
+    },
+    "76": {
+      "problem_id": "76",
+      "selectors": {
+        "medoid": {
+          "run_index": 11,
+          "sample_id": 1034,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 17,
+          "sample_id": 1040,
+          "is_correct": true
+        }
+      }
+    },
+    "77": {
+      "problem_id": "77",
+      "selectors": {
+        "medoid": {
+          "run_index": 20,
+          "sample_id": 1107,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 30,
+          "sample_id": 1117,
+          "is_correct": true
+        }
+      }
+    },
+    "78": {
+      "problem_id": "78",
+      "selectors": {
+        "medoid": {
+          "run_index": 34,
+          "sample_id": 1185,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 34,
+          "sample_id": 1185,
+          "is_correct": true
+        }
+      }
+    },
+    "79": {
+      "problem_id": "79",
+      "selectors": {
+        "medoid": {
+          "run_index": 19,
+          "sample_id": 1234,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 54,
+          "sample_id": 1269,
+          "is_correct": true
+        }
+      }
+    },
+    "80": {
+      "problem_id": "80",
+      "selectors": {
+        "medoid": {
+          "run_index": 57,
+          "sample_id": 1336,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 18,
+          "sample_id": 1297,
+          "is_correct": true
+        }
+      }
+    },
+    "81": {
+      "problem_id": "81",
+      "selectors": {
+        "medoid": {
+          "run_index": 24,
+          "sample_id": 1367,
+          "is_correct": false
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 56,
+          "sample_id": 1399,
+          "is_correct": false
+        }
+      }
+    },
+    "82": {
+      "problem_id": "82",
+      "selectors": {
+        "medoid": {
+          "run_index": 56,
+          "sample_id": 1463,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 56,
+          "sample_id": 1463,
+          "is_correct": true
+        }
+      }
+    },
+    "83": {
+      "problem_id": "83",
+      "selectors": {
+        "medoid": {
+          "run_index": 6,
+          "sample_id": 1477,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 6,
+          "sample_id": 1477,
+          "is_correct": true
+        }
+      }
+    },
+    "84": {
+      "problem_id": "84",
+      "selectors": {
+        "medoid": {
+          "run_index": 2,
+          "sample_id": 1537,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 2,
+          "sample_id": 1537,
+          "is_correct": true
+        }
+      }
+    },
+    "85": {
+      "problem_id": "85",
+      "selectors": {
+        "medoid": {
+          "run_index": 14,
+          "sample_id": 1613,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 7,
+          "sample_id": 1606,
+          "is_correct": false
+        }
+      }
+    },
+    "86": {
+      "problem_id": "86",
+      "selectors": {
+        "medoid": {
+          "run_index": 20,
+          "sample_id": 1683,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 27,
+          "sample_id": 1690,
+          "is_correct": true
+        }
+      }
+    },
+    "87": {
+      "problem_id": "87",
+      "selectors": {
+        "medoid": {
+          "run_index": 52,
+          "sample_id": 1779,
+          "is_correct": true
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 52,
+          "sample_id": 1779,
+          "is_correct": true
+        }
+      }
+    },
+    "88": {
+      "problem_id": "88",
+      "selectors": {
+        "medoid": {
+          "run_index": 39,
+          "sample_id": 1830,
+          "is_correct": false
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 39,
+          "sample_id": 1830,
+          "is_correct": false
+        }
+      }
+    },
+    "89": {
+      "problem_id": "89",
+      "selectors": {
+        "medoid": {
+          "run_index": 39,
+          "sample_id": 1894,
+          "is_correct": false
+        },
+        "file:./plugins/medoid_activation_tiebreak.py:MedoidActivationTieBreakSelector": {
+          "run_index": 39,
+          "sample_id": 1894,
+          "is_correct": false
+        }
+      }
+    }
+  }
+}

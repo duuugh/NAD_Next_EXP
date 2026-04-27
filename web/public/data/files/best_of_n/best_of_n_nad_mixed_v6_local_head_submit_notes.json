@@ -1,0 +1,50 @@
+{
+  "task": "best_of_n",
+  "method_name": "nad_mixed_v6_aime_local_binary_corrector",
+  "input": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v2_aime_top2_gap1e3_logprob_submit.json",
+  "output": "/home/jovyan/work/NAD_Next/result/best_of_n_nad_mixed_v6_local_head_submit.json",
+  "model": "/home/jovyan/work/NAD_Next/result/mixed_v6_local_head.pkl",
+  "threshold": 0.98,
+  "min_gap": 0.0,
+  "max_gap": 0.005,
+  "max_flips_total": 999999,
+  "max_flips_per_cache": 999999,
+  "target_cache_keys": [
+    "DS-R1/aime24",
+    "DS-R1/aime25",
+    "Qwen3-4B/aime24",
+    "Qwen3-4B/aime25"
+  ],
+  "features": [
+    "s1",
+    "s2",
+    "gap",
+    "s1_minus_s3",
+    "s2_minus_s3",
+    "lp1",
+    "lp2",
+    "lp_gap_top2_minus_top1",
+    "sc_gap_top2_minus_top1",
+    "len1",
+    "len2",
+    "len_gap_top2_minus_top1",
+    "parse_ok_gap_top2_minus_top1",
+    "is_int_gap_top2_minus_top1"
+  ],
+  "considered_count": 116,
+  "candidate_count": 1,
+  "applied_count": 1,
+  "applied_by_cache": {
+    "DS-R1/aime24": 1
+  },
+  "applied": [
+    {
+      "cache_key": "DS-R1/aime24",
+      "problem_id": "80",
+      "top1_sid": "1280",
+      "top2_sid": "1298",
+      "gap": 5.942683084103617e-05,
+      "p_flip": 0.9923939784071277
+    }
+  ]
+}
